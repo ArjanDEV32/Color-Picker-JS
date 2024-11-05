@@ -1,0 +1,284 @@
+
+  .CP-BG{
+    position: absolute;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 0px 1px 12px rgba(25, 25, 25, 0.5);
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    border-radius: 10px;
+
+  }
+
+  .CP-dragBar{
+    position: relative;
+    height: 30px;
+    cursor: grab;
+    transition: opacity 300ms;     
+    border-radius: 7px 7px 0 0;
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    margin-bottom: 5px;  
+  }
+    
+    
+  .CP-modal{
+    position: relative;
+    user-select: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 5px 5px 10px 5px;
+    
+
+  }
+
+  .CP-modalBG{
+    position: absolute;
+    z-index: 1;
+    border-radius: 3px;
+    background: linear-gradient(0deg, rgb(19, 19, 19), rgba(19, 18, 18, 0)),linear-gradient(100deg, white, rgba(255,255,255,0));
+    user-select: none;
+   
+  }
+
+  .CP-modalFG{
+    position: absolute;
+    z-index: 2;
+    user-select: none;
+    cursor: pointer;
+  }
+    
+  
+  .CP-pallete{
+    border:"1px solid white";
+    border-radius: 30px;
+    border: 1px solid white;
+    width: 10px;
+    height: 10px;
+    user-select: none;
+  }
+    
+  .CP-textInputField{
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 5px;
+    position: relative;
+    user-select: none;
+  }
+
+  .CP-colorDisplay{
+    width: 25px;
+    height: 25px;
+    border-radius: 30px;
+    cursor: pointer;
+    pointer-events: none;
+  }
+
+
+  .CP-textInput{
+    width: 100%;
+    font-size: 11px;
+  }
+
+  
+  .CP-ranges{
+    display: grid;
+    position: relative;
+    margin: 5px 5px 5px 5px;
+  }
+    
+  .CP-hueRange{
+    background-image: linear-gradient(to right, rgb(241, 93, 93), rgb(244, 244, 94), hsl(120, 84%, 66%), rgb(92, 239, 239), rgb(96, 96, 231), rgb(237, 113, 237), rgb(226, 67, 67));
+    appearance: none;
+    -webkit-appearance: none;
+    cursor: pointer;
+    height:10px;
+    border-radius:3px;
+    box-shadow: 1px 1px 10px rgba(25, 25, 25, 0.2);
+  }
+    
+  .CP-hueRange::-webkit-slider-thumb{
+    background: transparent;
+    -webkit-appearance: none;
+    height: 12px;
+    width: 12px;
+    border: 1px solid white;
+    border-radius:30px;
+    box-shadow: 4px 6px 30px rgba(25, 25, 25, 1);
+  }
+  .CP-hueRange::-moz-selection{
+    background: transparent;
+    -webkit-appearance: none;
+    appearance: none;
+    height: 12px;
+    width: 12px;
+    border: 1px solid white;
+    border-radius:30px;
+  }
+    
+  .CP-opacityRange{
+    appearance: none;
+    -webkit-appearance: none;
+    cursor: pointer;
+    height:10px;
+    border-radius:3px;
+    box-shadow: 1px 1px 10px rgba(25, 25, 25, 0.3);
+  }
+        
+  .CP-opacityRange::-webkit-slider-thumb{
+    background: transparent;
+    -webkit-appearance: none;
+    height: 12px;
+    width: 12px;
+    border: 1px solid white;
+    border-radius:30px;
+    box-shadow: 4px 6px 30px rgba(25, 25, 25, 1);
+  }
+  .CP-opacityRange::-moz-selection{
+    background: transparent;
+    appearance: none;
+    -webkit-appearance: none;
+    height: 12px;
+    width: 12px;
+    border: 1px solid white;
+    border-radius:30px;
+  }
+    
+  .CP-clipBoard{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    border-radius: 10px;
+    margin-bottom: 10px;
+  
+    position: relative;
+  }
+  .CP-clipBoardInputField{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 20px;
+    border-radius: 10px;
+    position: relative;
+  }
+  .CP-clipBoardTextInput{
+    text-align: center;
+    font-size: 11px;
+    border-radius: 10px;
+  }
+    
+  .CP-clipBoardSwatchContainer{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    border-radius: 10px;
+    transition: max-height 0.25s ease-in;
+    position: relative;
+    overflow: auto;
+  }
+
+
+  .CP-clipBoardSwatchCapsule{
+    width: 40px;
+    height: 40px;
+    border-radius: 10px;
+    display: flex;
+    margin-inline: 5px;
+    margin-block: 6px;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .CP-clipBoardSwatch{
+    width: 20px;
+    height: 20px;
+    position: absolute;
+    border-radius: 30px;
+    cursor: pointer;
+    background-position: 15% 20%;
+  }
+  
+  .CP-SwatchCapsule{
+    width: 25px;
+    height: 25px;
+    border-radius: 10px;
+    display: flex;
+    margin-inline: 5px;
+    margin-block: 6px;
+    justify-content: center;
+    align-items: center;
+   
+    }
+  
+  .CP-clipBoardSwatchDeleteButton{
+    width: 10px;
+    height: 10px;
+    position: relative;
+    left: 40%;
+    top: 35%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 7px;
+    color: white;
+    background-color: rgb(255, 0, 0);
+    border-radius: 30px;
+    opacity: 0;
+    transition: all 400ms;
+    cursor: pointer;
+    box-shadow: 1px 1px 12px rgba(255, 0, 0, 0.7);
+    font-family: 'Courier New', Courier, monospace;
+    font-family: monospace;
+  }
+  
+  .CP-clipBoardSwatchCapsule:hover .CP-clipBoardSwatchDeleteButton {opacity: 1;}
+    
+    
+    
+    .CLP-SwatchGradientCont{
+    
+      max-height: 90px;
+      margin-bottom: 10px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-wrap: wrap;
+      border-radius: 10px;
+      transition: max-height 0.25s ease-in;
+      position: relative;
+      overflow: auto;
+      
+     
+    }
+    
+    .CLP-Cont{
+    
+      max-height: 90px;
+      margin-bottom: 10px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-wrap: wrap;
+      transition: max-height 0.25s ease-in;
+      position: relative;
+      overflow: auto;
+      
+     
+    }
+    
+    .CLP-Cont::-webkit-scrollbar{display: none;}
