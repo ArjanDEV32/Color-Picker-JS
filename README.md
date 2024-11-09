@@ -76,7 +76,7 @@ where each component is a string of custom `css` styles.
 
 this class also consist of 2 function:
 ```javascript
-function iniit() // initializes the color-picker
+function init() // initializes the color-picker
 ```
 
 ```typescript
