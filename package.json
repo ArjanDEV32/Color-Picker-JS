@@ -1,0 +1,29 @@
+{
+  "name": "arjandev32-color-picker",
+  "version": "1.0.0",
+  "description": "A color picker in javascript",
+  "main": "cp.js",
+  "type": "module",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+
+  "publishConfig": {
+    "access": "public"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ArjanDEV32/Color-Picker-JS.git"
+  },
+  "keywords": [
+    "color picker",
+    "color picker javascript",
+    "color picker library"
+  ],
+  "author": "https://github.com/ArjanDEV32",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/ArjanDEV32/Color-Picker-JS/issues"
+  },
+  "homepage": "https://github.com/ArjanDEV32/Color-Picker-JS#readme"
+}
