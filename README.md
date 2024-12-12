@@ -100,6 +100,11 @@ let InputColor = new CustomEvent("update-colorpicker",{detail:{input:"orange"}})
 document.dispatchEvent(InputColor)
 ```
 
+## Download
+```
+npm i arjandev32-color-picker
+```
+
 in order to use add the code below in your html
 ```html
   <link rel="stylesheet" href="cp.css"/>
